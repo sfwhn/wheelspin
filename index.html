@@ -207,7 +207,7 @@
     delta += (5 + Math.floor(Math.random()*3))*Math.PI*2;
     const startAngle = angle;
     const endAngle = angle + delta;
-    const duration = 4200;
+    const duration = 7900;
     const startTime = performance.now();
     spinning = true;
     spinBtn.disabled = true;
@@ -225,7 +225,7 @@
         picked.push(winner);
         firstPending = false;
         spinning = false;
-        result.textContent = '🎉 Terpilih: ' + winner;
+        result.textContent = 'Terpilih: ' + winner;
         render();
       }
     }
